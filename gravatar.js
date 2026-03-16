@@ -18,4 +18,4 @@ const email = 'user@example.com';
 
 const hash = getGravatarHash(email);
 
-const avatarUrl = `https://www.gravatar.com/avatar/${hash}`;
+const avatarUrl = `https://www.gravatar.com/avatar/${hash}?s=200&d=identicon`;
