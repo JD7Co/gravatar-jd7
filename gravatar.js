@@ -1,1 +1,1 @@
-import crypto from 'crypto';
+const crypto = require('crypto');
