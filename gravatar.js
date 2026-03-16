@@ -14,3 +14,6 @@ function getGravatarHash(email) {
 
   return hash;
 }
+const email = 'user@example.com';
+
+const hash = getGravatarHash(email);
