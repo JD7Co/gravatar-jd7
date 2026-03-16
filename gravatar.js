@@ -17,3 +17,5 @@ function getGravatarHash(email) {
 const email = 'user@example.com';
 
 const hash = getGravatarHash(email);
+
+https://www.gravatar.com/avatar/${hash
