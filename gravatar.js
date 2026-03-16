@@ -1,12 +1,9 @@
-const crypto = require('crypto');
+import crypto from 'crypto';
 
 function getGravatarHash(email) {
 
-  // 1. Убираем пробелы
-  // 2. Переводим в нижний регистр
   email = email.trim().toLowerCase();
 
-  // 3. Создаём SHA256
   const hash = crypto
     .createHash('sha256')
     .update(email, 'utf8')
@@ -14,6 +11,7 @@ function getGravatarHash(email) {
 
   return hash;
 }
+
 const email = 'user@example.com';
 
 const hash = getGravatarHash(email);
